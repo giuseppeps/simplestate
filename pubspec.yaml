@@ -1,8 +1,12 @@
 name: simplestate
-description: A new Flutter project.
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-# publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+description: A package providing state management utilities for Flutter applications. It includes a `Manager` class for managing state changes and a `StateBuilder` widget for efficiently rebuilding parts of the UI based on state changes.
+
+The `Manager` class allows for the management and manipulation of application state through a `ValueNotifier`, providing methods to emit and update states. The `StateBuilder` widget is a customizable widget that efficiently updates its children based on changes in the managed state.
+
+This package also includes an example implementation of state management using the `PaymentManager` class, demonstrating state updates and UI changes through a `PaymentScreen`.
+
+For developers looking to manage and handle state changes in their Flutter applications efficiently, this package offers a flexible and structured approach to state management.
+
 
 version: 1.0.0+1
 

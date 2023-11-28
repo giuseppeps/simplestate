@@ -1,16 +1,56 @@
-# simplestate
+# Flutter State Management Package
 
-A new Flutter project.
+This package offers efficient state management utilities for Flutter applications, providing developers with tools to manage and update application states with ease.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **`Manager` Class**: A flexible state management class utilizing `ValueNotifier` for managing and updating application states.
+- **`StateBuilder` Widget**: A customizable widget that efficiently rebuilds parts of the UI based on state changes.
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+To use this package in your Flutter project, follow these steps:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Add this package to your `pubspec.yaml` file:
+
+   ```yaml
+   dependencies:
+     flutter_state_management: ^1.0.0 
+
+# Usage
+
+## Manager Class
+
+The Manager class allows you to manage and manipulate the application state. Example usage:
+```
+// Create a Manager instance with an initial state
+final PaymentManager manager = PaymentManager();
+
+// Update the state
+manager.setLoadingTrue();
+```
+
+# StateBuilder Widget
+
+The StateBuilder widget efficiently rebuilds parts of the UI based on state changes. Example usage:
+
+```
+StateBuilder(
+  manager: manager,
+  builder: (context, state) {
+    return Visibility(
+      visible: state.isLoading,
+      child: CircularProgressIndicator(),
+    );
+  },
+),
+```
+
+
+# Example
+
+An example implementation of state management using the PaymentManager class is included, demonstrating state updates and UI changes in a PaymentScreen.
+
+# License
+
+This project is licensed under the BSD 3-Clause License - see the LICENSE file for details.
