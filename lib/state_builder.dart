@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simplestate/state_manager.dart';
+import 'package:simple_state_manager/state_manager.dart';
 
 class StateBuilder<T extends BaseState> extends StatefulWidget {
   final Manager<T> manager;

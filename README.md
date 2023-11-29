@@ -15,7 +15,7 @@ To use this package in your Flutter project, follow these steps:
 
    ```yaml
    dependencies:
-     flutter_state_management: ^1.0.0 
+     simple_state_manager: ^1.0.0 
 
 # Usage
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simplestate/state_builder.dart';
-import 'package:simplestate/state_manager.dart';
+import 'package:simple_state_manager/state_builder.dart';
+import 'package:simple_state_manager/state_manager.dart';
 
 class PaymentManager extends Manager<SecondState> {
   PaymentManager() : super(SecondState.isEmpty());
